@@ -29,11 +29,13 @@
 // EX: [ "one", "two", "three" ] --> null
 
 function evenNumber(arr) {
-  for(var i = 0; i < arr.length; i++) {
-    if (arr[i] % 2 === 0) even.push(arr[i]);
-  }
-}
+  let index = [];
+  var iterator = arr.values();
 
+for (let letter of iterator) {
+//  console.log(letter);
+}
+}
 //   for (var i = 0; i < arr.length; i++) {
 //     count = 0;
 //     for (var j = 0; j < arr.length; j++) {
@@ -50,3 +52,63 @@ evenNumber([ 1, 3, 3, 3, 2, 4, 4, 2, 5 ]);
 //
 // EX: [2, 1, 3, 7] --> 42
 // EX: [0, 2, 3] --> 0
+
+
+// Write a function named `camelCase` that takes one parameter, a string that is
+// all lowercase and doesn't include any punctuation. This function should take
+// that string and convert it to camel case.
+//
+// EX: camelCase("this is a string") —> "thisIsAString"
+// EX: camelCase("vacation rentals by owner") —>`"vacationRentalsByOwner"
+// EX: camelCase("supercalifragalisticexpialidocious") —> "supercalifragalisticexpialidocious"
+camelCase = function(str) {
+  console.log(str.search(' ') >= 0);
+}
+
+// Using the helper functions below, write a function called numberToEnglish that takes a number as a parameter and returns the number as a string using English words. 
+//
+// EX: numberToEnglish(7) --> "seven"
+// EX: numberToEnglish(575) --> "five hundred seventy-five"
+// EX: numberToEnglish(78193512) --> ""seventy-eight million one hundred ninety-three thousand five hundred twelve"
+
+let numbersToWords = {
+  0: 'zero',
+  1: 'one',
+  2: 'two',
+  3: 'three',
+  4: 'four',
+  5: 'five',
+  6: 'six',
+  7: 'seven',
+  8: 'eight',
+  9: 'nine',
+  10: 'ten',
+  11: 'eleven',
+  12: 'twelve',
+  13: 'thirteen',
+  14: 'fourteen',
+  15: 'fifteen',
+  16: 'sixteen',
+  17: 'seventeen',
+  18: 'eighteen',
+  19: 'nineteen',
+  20: 'twenty',
+  30: 'thirty',
+  40: 'forty',
+  50: 'fifty',
+  60: 'sixty',
+  70: 'seventy',
+  80: 'eighty',
+  90: 'ninety',
+};
+
+let numbersToPlace = {
+  10: 'ten',
+  100: 'hundred',
+  1000: 'thousand',
+  1000000: 'million',
+  1000000000: 'billion',
+  1000000000000: 'trillion',
+  1000000000000000: 'quadrillion',
+  1000000000000000000: 'quintillion',
+};
