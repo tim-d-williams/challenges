@@ -65,7 +65,7 @@ camelCase = function(str) {
   console.log(str.search(' ') >= 0);
 }
 
-// Using the helper functions below, write a function called numberToEnglish that takes a number as a parameter and returns the number as a string using English words. 
+// Using the helper functions below, write a function called numberToEnglish that takes a number as a parameter and returns the number as a string using English words.
 //
 // EX: numberToEnglish(7) --> "seven"
 // EX: numberToEnglish(575) --> "five hundred seventy-five"
@@ -112,3 +112,18 @@ let numbersToPlace = {
   1000000000000000: 'quadrillion',
   1000000000000000000: 'quintillion',
 };
+
+
+// A prime number is an integer greater than 1 that has no divisors other than itself and 1. Write a function that accepts a number and returns true if it's a prime number, false if it's not.  
+//
+// EX: primeTester(2) --> true
+// EX: primeTester(1) --> false
+// EX: primeTester(13) --> true
+function primeTester(num) {
+  if (num%num == 0) {
+  return true
+}
+else {
+    return false
+  }
+}
