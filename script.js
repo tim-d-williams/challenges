@@ -62,8 +62,12 @@ evenNumber([ 1, 3, 3, 3, 2, 4, 4, 2, 5 ]);
 // EX: camelCase("vacation rentals by owner") —>`"vacationRentalsByOwner"
 // EX: camelCase("supercalifragalisticexpialidocious") —> "supercalifragalisticexpialidocious"
 camelCase = function(str) {
-  console.log(str.search(' ') >= 0);
+  return str.replace(/\W+(.)/g, function(match, char)
+  {
+       return char.toUpperCase();
+   });
 }
+
 
 // Using the helper functions below, write a function called numberToEnglish that takes a number as a parameter and returns the number as a string using English words. 
 //
