@@ -114,16 +114,27 @@ let numbersToPlace = {
 };
 
 
-// A prime number is an integer greater than 1 that has no divisors other than itself and 1. Write a function that accepts a number and returns true if it's a prime number, false if it's not.  
+// A prime number is an integer greater than 1 that has no divisors other than itself and 1. Write a function that accepts a number and returns true if it's a prime number, false if it's not.
 //
 // EX: primeTester(2) --> true
 // EX: primeTester(1) --> false
 // EX: primeTester(13) --> true
 function primeTester(num) {
-  if (num%num == 0) {
-  return true
-}
-else {
-    return false
+    if (((num <=1) || num > 2 && num % 2 === 0) || (num > 3 && num % 3 === 0) || (num > 5 && num % 5 === 0) || (num > 7 && num % 7 === 0)) {
+      return false;
   }
+    return true;
 }
+
+//Given an array of unique words, find the word that contains the greatest number of other words. A word must be at least two letters long.
+
+//EX: nestedWordCount([ "gray", "grays", "ray", "rays", "strays" ]) --> "grays"
+
+
+
+//Given a string, remove any characters that are not unique from the string.
+//
+// EX: onlyUnique("abccdefe") --> "abdf"
+// EX: onlyUnique("hello there") --> "o tr"
+// EX: onlyUnique("xyz") --> "xyz"
+// EX: onlyUnique("iiii") --> ""
