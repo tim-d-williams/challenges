@@ -141,3 +141,10 @@ function primeTester(num) {
 // EX: onlyUnique("hello there") --> "o tr"
 // EX: onlyUnique("xyz") --> "xyz"
 // EX: onlyUnique("iiii") --> ""
+
+
+// Given an array of numbers, calculate the greatest contiguous sum of numbers in it. A single array item will count as a contiguous sum.
+//
+// EX: sumArray([1, 2, 3]) --> 6
+// EX: sumArray([4, -1, 5]) --> 8
+// EX: sumArray([10, -11, 11]) --> 11
